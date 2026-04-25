@@ -35,10 +35,10 @@ describe('VectorStore', () => {
   let store: VectorStore;
   let tmpDir: string;
 
-  beforeEach(() => {
+  beforeEach(async () => {
     tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'memory-test-'));
     store = new VectorStore(tmpDir);
-    store.open();
+    await store.open();
   });
 
   afterEach(() => {

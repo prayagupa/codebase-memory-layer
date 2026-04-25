@@ -1,0 +1,42 @@
+# Build output
+out/
+dist/
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# TypeScript incremental build info
+*.tsbuildinfo
+
+# VS Code extension packaging
+*.vsix
+
+# Local embedding model files (download separately)
+models/*.onnx
+models/*.wasm
+
+# Local SQLite memory database
+*.db
+*.db-shm
+*.db-wal
+
+# Logs
+*.log
+npm-debug.log*
+
+# macOS
+.DS_Store
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Test coverage
+coverage/
+
+# Editor
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json

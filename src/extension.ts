@@ -38,7 +38,7 @@ export async function activate(context: vscode.ExtensionContext): Promise<void> 
   // -------------------------------------------------------------------------
   const storagePath = context.globalStorageUri.fsPath;
   const store = new VectorStore(storagePath);
-  store.open();
+  await store.open();
 
   // -------------------------------------------------------------------------
   // Initialise embedding model
